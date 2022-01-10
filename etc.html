@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>その他不良入力</title>
+
+<script type="text/javascript" src="ms.js"></script>
+<script type="text/javascript" src="etc.js"></script>
+
+</head>
+<body>
+  <style>
+    .box select{
+      width: 200px;
+    }
+</style>
+
+<h3>その他不良入力</h3>
+
+<div class="box">
+  <select size="4" id="kotai" onchange="fs(this);"></select><br><br>
+  <select size="5" id="setubi" onchange="fs(this);"></select><br><br>
+  <select size="5" id="fryou" onchange="ks(this);"></select><br><br>
+  <select size="5" id="kai" onchange="rs(this);"></select><br><br>
+  <select size="5" id="rank"></select><br><br>
+
+  <select size="5" name="rankB" id="rankB">
+    <option value="0" selected>0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+   </select><br><br>
+</div>
+<input type="number" id="CD" name="CD" placeholder="CD"/><br><br>
+<input type="button" value="CDリセット" onclick="setValue()"/>
+<br><br>
+<input type="number" id="suu" name="suu" placeholder="数量"/>
+<input id="tani" name="tani" placeholder="単位"/><br><br>
+<input id="bik" name="bik" placeholder="備考"/><br><br>
+<input type="button" value=" 登   録 " onclick="setValue()"/>
+<input type="button" value="キャンセル" onclick="setValue()"/>
+
+</body>
+</html>
